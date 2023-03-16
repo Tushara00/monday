@@ -98,7 +98,7 @@ textarea,
 select {
   font: inherit;
 }
-
+html{width:100%};
 /* Remove all animations, transitions and smooth scroll for people that prefer not to see them */
 @media (prefers-reduced-motion: reduce) {
   html:focus-within {
@@ -283,7 +283,10 @@ section,
 /* //////////////////////
   Article snippets
   /////////////////////// */
-
+h3{
+  margin-block-end:0 !important;
+ 
+}
 .snippet {
   display: grid;
   gap: 1em;
@@ -298,7 +301,7 @@ section,
 .snippet__image {
   grid-area: image;
   width: 100%;
-  aspect-ratio: 4 / 3;
+ 
   object-fit: cover;
 }
 .snippet__title {
@@ -339,7 +342,7 @@ section,
       "meta image"
       "body image"
       "button image";
-    grid-column-gap: 4em;
+    grid-column-gap: 2em;
     grid-template-columns: 1fr 40%;
     grid-template-rows: min-content min-content min-content 1fr;
   }
@@ -372,7 +375,21 @@ section,
   background: var(--clr-primary-500);
   border-color: var(--clr-primary-500); 
 }
+.snippet-flex{
+  display:flex;
+  gap:2rem;
+  flex-grow:1;
+  align-items: center;
+}
 
+.block p, a{
+ margin-bottom:1rem;
+}
+
+.block h3{
+  font-size: 2rem;
+  margin-bottom:2rem
+ }
 .btn--neutral {
   background-color: var(--clr-neutral-100);
   color: var(--clr-neutral-900);
