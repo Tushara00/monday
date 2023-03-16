@@ -11,4 +11,4 @@ collections:
    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
    fields:
       - {label: "Title", name: "title", widget: "string"}
-      
+      - {label: "Author", name: "author", widget: "string"}
